@@ -60,9 +60,9 @@ console.log('objd.value: ' + objd['value']);
 
 
 function aaa(b, objt){
-	b = 90;				//기본형 보낸걸 받아본다
-	objt.value = 80;	//참조형 보낸걸 받아본다
-	console.log('aaa');
+	b = 90,				//기본형 보낸걸 받아본다
+	objt.value = 80,	//참조형 보낸걸 받아본다
+	console.log('aaa')
 }
 aaa(a, objd);	//a: 메소드 호출하면서 b라는 기억장소 만들어서 값만 전달
 			//함수 끝나면 b도 걍 없어지는것. a는 100야
