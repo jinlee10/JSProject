@@ -84,7 +84,7 @@ console.log(foo.major);
 console.log(foo['major']);
 
 
-
+/////// 나머지 42페이지에서 계--속!
 
 
 
