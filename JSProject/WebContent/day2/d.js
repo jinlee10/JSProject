@@ -40,9 +40,24 @@ var car2 = car1;
 
 function Car(model, speed, color){	//오잉 대문자? 그럼 너 클래스구나!
 	this.model = model; //this 안붙이면 그냥 전역이나 진배없다
-	this.speed = speed;
+	this.speed = speed;	//안붙이면 걍 바깥에다 변수 쓴거나 진배없다
 	this.color = color;
 }
+
+
+
+//heap, stack 영역에 대해 알아보자.araboja
+
+///// P R O T O T Y P E /////   -->하나만 만들어져 모든게 재활용!
+Car.prototype.break1 = function(){
+	this.speed -= 10;
+};
+Car.prototype.accel = function(){
+	this.speed +=10;
+};
+// // // // // // // // // //
+
+
 
 var car01 = new Car('RollsRoyce Dawn', 70, 'sky blue');	//함수지만 new때문에 객쳋럼됨
 //car01.model = '쏘나타';	//있으면 접근, 없으면 추가
@@ -51,14 +66,21 @@ var car01 = new Car('RollsRoyce Dawn', 70, 'sky blue');	//함수지만 new때문
 console.log('car01.model: ' + car01.model);
 console.log('car01.speed: ' + car01.speed);
 console.log('car01.color: ' + car01.color);
+console.log('-------------------------------');
 
 //var car01 = new car();	//이제서야 객체가 하나 만들어지는것이다
+car01.break1();
+console.log('car01.speed: ' + car01.speed);
+
 var car02 = new Car('Mulsan Speed', 190, 'red');
+car02.break1();
+console.log('car02.speed: ' + car02.speed);
+
 var car03 = new Car('부가티 베이론', 110, 'black');
 
 
 
-
+console.log(car03.toString());
 
 
 
