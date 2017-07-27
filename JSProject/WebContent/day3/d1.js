@@ -71,12 +71,8 @@ arr.push(1);
 //배열전체 출력 
 
 arr.forEach((v)=> {//갯수만큼 반복ㅎ면서 출력
-	arr.forEach(function(v)){//yn
-		
-	
 	console.log(v);
-	}
-}
+});
 
 
 // => : 함수 축약식(안드선 람다)
@@ -86,7 +82,7 @@ multi = function(x, y){
 	}
 
 	
-multi = (x, y) => return x * y; //심플문. {}생략ok
+multi = (x, y) =>{ return x * y;} //심플문. {}생략ok
 //샐행되는값ㅇ이있으먄옌[길;탄헤즌디
 //집어넣자
 mlti = (x, y) => x * y;
