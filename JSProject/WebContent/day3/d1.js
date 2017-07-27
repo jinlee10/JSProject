@@ -101,7 +101,7 @@ console.log(add()); //a,b랑 무관하게 args가있지?
 //함수 초기화값
 
 
-console.log(add(a,b = 0)); //아무도 선택 안하면
+console.log(add(a = 0,b = 0)); //아무도 선택 안하면
 						//얘가 대신 설정한대 3
 
 console.log();

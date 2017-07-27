@@ -1,0 +1,69 @@
+//backtick ``
+var name = 'korea';
+var address = '서울 성동구';
+var result = `이름 ${name}, 주소 : ${address}`;
+
+console.log(result);
+
+
+//var s = 'aaaa\nbbbb\ncccc';
+var s = 
+`aaaa
+bbbb
+cccc
+`;
+
+console.log(s);
+// 간결한 구문 람다표현식
+//함수 축약 기법(람다 표현식)
+//function aaa(a){
+// a();
+//}
+//aaa(function(){
+// console.log('tttt 1  ');
+//})
+//
+//aaa(()=>console.log('tttt 2 '));
+//
+
+//abc = function(a, b){
+// return a + b;
+//};
+//
+//abc = (a,b) => a + b;
+//
+//console.log(abc(3,5));
+//
+//var arr = [3,4,5,6,4,3];
+//
+//
+//arr.forEach(function(v){
+// console.log("a : " + v);
+//});
+//
+//arr.forEach(v => {
+// console.log("b" + v);
+//});
+//
+
+////여러줄 축약
+//var multi1 = function(a, b){
+// a++;
+// b++;
+// return a * b;
+//}
+
+var multi1 = (a, b)=>{
+ a--;
+ b--;
+ return a * b;
+}
+
+
+console.log('곱 : ' + multi1(3,4));
+
+
+//함수 초기값 설정하기
+function func(a, b=1){
+ return a + b;
+}
